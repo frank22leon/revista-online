@@ -1,0 +1,14 @@
+.contenedor {
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 97px 1fr 1fr 1fr / 100vw;
+    grid-template-areas: "navbar" "contenido" "listadoizquierdo" "footer";
+  }
+  
+  @media (min-width: 768px) {
+    .contenedor {
+      grid-template: 97px 1fr 1fr / 75% 25%;
+      grid-template-areas: "navbar navbar" "contenido listadoizquierdo" "footer footer";
+    }
+  }
